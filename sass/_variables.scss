@@ -1,0 +1,9 @@
+$debug: false;
+
+$font-family-regular: "Geometria";
+$font-color-base: #FFF;
+
+$embed-font: true;
+
+$sprites-path: "sprites/";
+$icons: sprite-map("#{$sprites-path}*.png");

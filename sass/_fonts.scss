@@ -1,0 +1,10 @@
+@import "variables";
+@import "compass/css3";
+
+@if $embed-font {
+	@include font-face("Geometria", font-files("2B2269_E_0.woff", "2B2269_E_0.ttf", "2B2269_E_0.eot"));
+	@include font-face("Geometria-Bold", font-files("2B2269_0_0.woff", "2B2269_0_0.ttf", "2B2269_0_0.eot"));
+	@include font-face("Geometria-ExtraBold", font-files("2B2269_4_0.woff", "2B2269_4_0.ttf", "2B2269_4_0.eot"));
+	@include font-face("Geometria-Medium", font-files("2B2269_8_0.woff", "2B2269_8_0.ttf", "2B2269_8_0.eot"));
+	@include font-face("Geometria-Light", font-files("2B2269_C_0.woff", "2B2269_C_0.ttf", "2B2269_C_0.eot"));
+}

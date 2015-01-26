@@ -1,0 +1,63 @@
+@media screen and (max-width: 860px) {
+	html, body {
+		width: auto;
+		height: auto;
+		min-height: 100%;
+		overflow: visible;
+	}
+	.nav-primary {
+		top: 108px;
+		box-shadow: none;
+		overflow: hidden;
+
+		li {
+			background-color: #494668;
+
+			&:hover {
+				transform: none;
+			}
+		}
+		a {
+			height: 50px;
+			padding: 0;
+			color: #FFF;
+			text-indent: -1000em;
+		}
+		.ico {
+			position: absolute;
+			top: 6px;
+			fill: #FFF;
+			z-index: -1;
+		}
+		.ico-geo {
+			height: 33px;
+		}
+		.ico-stat, .ico-speed {
+			top: 10px;
+		}
+	}
+	.nav-secondary {
+		li {
+			margin-left: 20px;
+		}
+	}
+	.page-head {
+		.logo-head {
+			width: 67px;
+			top: 12px;
+			transform: scale(0.6);
+		}
+	}
+	.promoblock {
+		padding-bottom: 100px;
+	}
+	.nav-social {
+		position: static;
+		top: auto;
+		bottom: 0;
+		left: 0; right: 0;
+		padding: 10px 0 10px 10px;
+		box-sizing: border-box;
+		background-color: #494668;
+	}
+}
