@@ -1,4 +1,6 @@
-@media screen and (max-width: 860px) {
+@import "variables";
+
+@media #{$tablet} {
 	html, body {
 		width: auto;
 		height: auto;
@@ -59,5 +61,88 @@
 		padding: 10px 0 10px 10px;
 		box-sizing: border-box;
 		background-color: #494668;
+	}
+}
+
+@media #{$mobile} {
+	.page-head {
+		height: 60px;
+	}
+	.nav-switcher {
+		display: block;
+	}
+	.nav-primary {
+		position: static;
+		font-size: 0.9em;
+
+		ul, li {
+			display: block;
+			width: 100%;
+		}
+		a {
+			height: auto;
+			margin: 0; padding: 15px;
+			border-width: 0 0 1px;
+			text-indent: 0;
+			text-align: left;
+		}
+		.ico {
+			position: static;
+			float: left;
+			height: 20px;
+			margin: 10px 0 0;
+		}
+		.ico-stat {
+			width: 25px;
+			margin-right: 5px;
+			margin-left: 5px;
+		}
+	}
+	.nav-secondary {
+		display: none;
+		bottom: auto; top: 100%;
+		left: 0; right: 0;
+		font-size: 0.8em;
+		text-align: left;
+		opacity: 0;
+		transition: opacity 0.25s;
+
+		li {
+			display: block;
+			margin: 0;
+			border-bottom: 1px solid #b6b5c3;
+		}
+		a {
+			display: block;
+			background: #494668;
+			padding: 10px;
+		}
+	}
+	.nav-secondary.is-opened {
+		display: block;
+		opacity: 1;
+	}
+	.promoblock {
+		padding: 2em 0;
+
+		h1 {
+			font-size: 1.5em;
+		}
+		p {font-size: 1em;}
+	}
+	.page-head {
+		.logo-head {
+			top: 0;
+			left: -40px;
+			width: image-width("#{$sprites-path}logo.png");
+    		-webkit-transform: scale(0.6);
+		}
+	}
+	.nav-social {
+		margin-top: 2em;
+		.pref {
+			top: 0;
+		}
+		ul{display: block; margin: 10px 0 0}
 	}
 }

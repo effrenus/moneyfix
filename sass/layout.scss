@@ -51,6 +51,7 @@ a {
 		position: absolute;
 		left: 50%; top: 30px;
 		width: 35px;
+		height: 40px;
 		display: block;
 		margin-left: -17.5px;
 		fill: #494668;
@@ -59,11 +60,7 @@ a {
 	li:hover .ico {
 		fill: red;
 	}
-	.ico-speed {
-		top: 40px;
-	}
 	.ico-stat {
-		top: 38px;
 		width: 50px;
 		margin-left: -25px;
 	}
@@ -98,7 +95,7 @@ a {
 		margin-left: 40px;
 	}
 	a:hover {
-		color: #00716d;
+		color: #09E3DB;
 	}
 }
 
@@ -204,4 +201,24 @@ a {
 		position: relative;
 		top: 15px;
 	}
+}
+
+.nav-switcher {
+	display: none;
+	position: absolute;
+	right: 20px; top: 10px;
+	width: 40px; height: 40px;
+	background: #494668;
+	border: 0;
+	
+	&:before, &:after, i {
+		position: absolute;
+		content: "";
+		left: 5px; right: 5px;
+		height: 3px;
+		background-color: #FFF;
+	}
+	&:before {top: 10px;}
+	&:after {top: 18px;}
+	i {top: 26px;}
 }

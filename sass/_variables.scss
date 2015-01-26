@@ -7,3 +7,6 @@ $embed-font: true;
 
 $sprites-path: "sprites/";
 $icons: sprite-map("#{$sprites-path}*.png");
+
+$tablet: "only screen and (max-width: 860px)";
+$mobile: "only screen and (max-width: 600px)";

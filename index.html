@@ -94,7 +94,6 @@
 			Полная статистика данных</a></li>
 		</ul>
 	</nav>
-	</footer>
 	<nav class="nav-social">
 		<span class="pref">Самые последние новости на страницах MoneyFix в соцсетях</span>
 		<ul>
@@ -103,7 +102,24 @@
 			<li class="ico ico-tw"><a href="#">твиттер</a></li>
 		</ul>
 	</nav>
+	</footer>
+
+	<button class="nav-switcher"><i></i></button>
 </div>
+
+<script>
+(function(){
+	var btn = document.querySelector('.nav-switcher'),
+		nav = document.querySelector('.nav-secondary');
+	btn.addEventListener('click', function(){
+		if(nav.className.indexOf('is-opened') == -1){
+			nav.className += ' is-opened';
+		}else{
+			nav.className = nav.className.replace('is-opened', '');
+		}
+	});
+})();
+</script>
 
 </body>
 </html>
