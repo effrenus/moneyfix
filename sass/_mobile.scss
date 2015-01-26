@@ -1,5 +1,14 @@
 @import "variables";
 
+@media #{$wide} {
+	.promoblock {
+		position: absolute;
+		left: 0; right: 0;
+		top: 28vh; bottom: 0;
+		padding: 0;
+	}
+}
+
 @media #{$tablet} {
 	html, body {
 		width: auto;
