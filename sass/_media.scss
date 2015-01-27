@@ -7,6 +7,19 @@
 		top: 28vh; bottom: 0;
 		padding: 0;
 	}
+	.nav-primary {
+		animation: navAnimation 1s;
+	}
+	@keyframes navAnimation {
+		0% {
+		    transform: translateY(108px);
+		    opacity: 0.15;
+		}
+		100% {
+		    transform: translateY(0);
+		    opacity: 1;
+		}
+	}
 }
 
 @media #{$tablet} {
@@ -44,7 +57,7 @@
 			height: 33px;
 		}
 		.ico-stat, .ico-speed {
-			top: 10px;
+			top: 4px;
 		}
 	}
 	.nav-secondary {
@@ -64,12 +77,11 @@
 	}
 	.nav-social {
 		position: static;
-		top: auto;
-		bottom: 0;
-		left: 0; right: 0;
 		padding: 10px 0 10px 10px;
 		box-sizing: border-box;
 		background-color: #494668;
+		ul {vertical-align: middle;}
+		.pref {top: 0}
 	}
 }
 
