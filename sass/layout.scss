@@ -34,8 +34,9 @@ a {
 		width: 20%;
 		background-color: #FFF;
 		text-align: center;
-		transition: all 0.25s;
 		vertical-align: top;
+		transition: all 0.25s;
+		transform-origin: 50% 100%; 
 
 		z-index: 1;
 
@@ -58,7 +59,7 @@ a {
 		transition: all 0.15s;
 	}
 	li:hover .ico {
-		fill: red;
+		fill: #D12C57;
 	}
 	.ico-stat {
 		width: 50px;
@@ -95,7 +96,7 @@ a {
 		margin-left: 40px;
 	}
 	a:hover {
-		color: #09E3DB;
+		color: #0B857E;
 	}
 }
 
@@ -127,16 +128,30 @@ a {
 	padding-top: 10rem;
 	box-sizing: border-box;
 	text-align: center;
+	perspective: 500px;
 
 	h1 {
 		margin-bottom: 0.2em;
 		font-family: "Geometria-ExtraBold";
 		font-size: 3.5rem;
+		animation: promoanimation 1s;
 	}
 	p {
 		font-family: "Geometria-Light";
 		font-size: 1.7rem;
 		line-height: 1.4;
+		animation: promoanimation 1s;
+	}
+}
+
+@keyframes promoanimation {
+	0% {
+		opacity: 0;
+		transform: translateZ(-1000px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateZ(0);
 	}
 }
 
