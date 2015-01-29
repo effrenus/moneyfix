@@ -1,0 +1,31 @@
+@import "variables";
+
+$svg_animation: (("speed", 67), ("geo", 92), ("kind", 22), ("shedule", 143), ("stat", 100));
+
+@media #{$wide} {
+	.ico {
+		fill: #494668;
+		stroke: #494668;
+		stroke-dasharray: 1;
+	}
+
+	@each $icon_data in $svg_animation {
+		.ico-#{nth($icon_data, 1)}{
+			stroke-dasharray: nth($icon_data, 2);
+			animation: svganimation_#{nth($icon_data, 1)} 5s 0s;
+		}
+		@keyframes svganimation_#{nth($icon_data, 1)} {
+			0% {
+				fill: #fff;
+				stroke-dashoffset: -1*nth($icon_data, 2);
+			}
+			80% {
+				stroke: #494668;
+				stroke-dashoffset: 0;
+			}
+			100% {
+				fill: #494668;
+			}
+		}
+	}
+}
