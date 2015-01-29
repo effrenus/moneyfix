@@ -60,6 +60,8 @@ a {
 	}
 	li:hover .ico {
 		fill: #D12C57;
+		stroke: #D12C57;
+		z-index: -1;
 	}
 	.ico-stat {
 		width: 50px;
